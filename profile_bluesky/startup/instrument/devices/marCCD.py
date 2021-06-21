@@ -23,6 +23,6 @@ class MarCCDDet15(SingleTrigger, MarCCDDetector):
     tiff = Cpt(MarFileStoreTIFF, '', 
                 write_path_template=write_path,
                 read_path_template='/home/data/', # same path but different fs
-                path_semantics='posix')
+                path_semantics='posix') #, root='/home/data/')
 
 marDet = MarCCDDet15('BL15:MARCCD:', name='marCCD', read_attrs=['tiff'])

@@ -3,11 +3,11 @@ Helper plans, functions
 
 """
 from ..framework.initialize import db
-
+from ..devices.misc_devices import filter1, filter2, filter3, filter4
 import matplotlib.pyplot as plt
 import numpy as np
 
-__all__ = ['show_table', 'show_image', 'show_scan', 'avg_images']
+__all__ = ['show_table', 'show_image', 'show_scan', 'avg_images', 'filters']
 
 def show_table(ind=-1):
     return db[ind].table()
